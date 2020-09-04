@@ -12,4 +12,5 @@ file1.writelines(text)
 file1.close() #to change file access modes 
 
 data = pd.read_csv('myfile.txt', encoding= 'unicode_escape', header=None)
+data.to_excel('myfile.xlsx')
 data
