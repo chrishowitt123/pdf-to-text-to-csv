@@ -9,7 +9,7 @@ with pdfplumber.open(filename) as pdf:
     text = page.extract_text()
     print(text)
     
-file1 = open(fn + '.txt',"w") 
+file1 = open(f"{fn}.txt","w") 
 file1.writelines(text)
 file1.close() #to change file access modes 
 
